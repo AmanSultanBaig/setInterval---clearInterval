@@ -13,10 +13,11 @@
   <button id="interval_btn">Stop Interval</button>
 </body>
   <script>
-      
+  
+  // setInterval method will execute your command every given time/second
   let getInterval = setInterval(() => {
       document.getElementById('myText').innerHTML += ' Hello World'
-  },1000);
+  },1000); // 1000 = 1 second
 
   function stopInterval(){
     clearInterval(getInterval)

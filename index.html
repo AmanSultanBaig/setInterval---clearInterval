@@ -18,11 +18,13 @@
   let getInterval = setInterval(() => {
       document.getElementById('myText').innerHTML += ' Hello World'
   },1000); // 1000 = 1 second
-
+	
+  // this handler will stop interval when you will trigger 
+ // this event using click on given button
   function stopInterval(){
     clearInterval(getInterval)
-  }
-  document.getElementById('interval_btn').addEventListener('click',stopInterval)
+  };
+  document.getElementById('interval_btn').addEventListener('click',stopInterval); 
   
   </script>
 </html>
